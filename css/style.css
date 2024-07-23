@@ -1,0 +1,311 @@
+:root{
+    --main: #4559e5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: verdana;
+}
+header{
+    width: 100vw;
+    height: 70px;
+    background: var(--main);
+    box-shadow: 0px 0px 10px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.hero{
+    margin-top: 50px;
+    width: 100%;
+    background: url('../img/product.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h3{
+    color: var(--main);
+    -webkit-text-stroke: .5px #fff;
+    font-size: 6vw;
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.hero-intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1{
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+    width: 90%;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 10vw;
+}
+.hero h5{
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 30px;
+}
+.hero a, .cta{
+    background-color: var(--main);
+    color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border: 2px solid var(--main);
+}
+.cta:active{
+    background: transparent;
+    border: 2px solid var(--main);
+}
+.about{
+    width:100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.about .options{
+    flex-basis: 320px;
+    margin: 20px;
+    background: #f0f0f0;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #aaa;
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+.options h6{
+    font-size: 30px;
+    color: var(--main);
+    width: 90%;
+}
+.options p{
+    width: 90%;
+    font-size: 16px;
+    
+}
+.services{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.services h2{
+    width: 90%;
+    color: var(--main);
+}
+.service-contents{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service-contents p{
+    margin: 20px 0px;
+    font-size: 18px;
+}
+.services ul{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services h6{
+    font-size: 20px;
+    color: var(--main);
+}
+.services ul li{
+    flex-basis: 300px;
+    list-style: none;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+.service-contents ul li div{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.benefits{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.benefits .image{
+    width: 90%;
+    max-width: 400px;
+}
+.benefits .image img{
+    width: 100%;
+}
+.benefits .benefits-title{
+    font-size: 30px;
+    color: var(--main);
+    font-weight: 900;
+    -webkit-text-stroke: 1px #000;
+    margin: 15px 0px;
+}
+.benefits .title{
+    width: 90%;
+    font-size: 30px;
+    color: var(--main);
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.benefits ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.benefits li{
+    background: #f0f0f0;
+    flex-basis: 300px;
+    box-shadow: 0px 0px 10px var(--main);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+.benefits h6{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: serif;
+    color: var(--main);
+    margin: 15px 0px;
+}
+.benefits p{
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 95%;
+}
+.testimonies{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-top: 30px;
+}
+.testimonies .testimonies-title{
+    color: var(--main);
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #fff;
+}
+.testimonies .testimonies-contents{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.testimony{
+    flex-basis: 300px;
+    margin: 20px;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px #000;
+    background: var(--main);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.testimony:hover{
+    background: transparent;
+    color: #000;
+    transform: scale(1.05);
+}
+.testimony img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.testimony .name{
+    font-size: 25px;
+    margin: 10px 0px;
+    font-weight: 300;
+    font-family: serif;
+}
+.testimony .testimony-words{
+    width: 90%;
+    font-weight: 300;
+}
+footer{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+}
+footer a{
+    color: #fff;
+}
+@media only screen and (min-width: 400px){
+    .hero{
+        min-height: 200vh;
+    }
+    .hero h3{
+        font-size: 3vw;
+    }
+    .hero-intro h1{
+        font-size: 10vw;
+    }
+    .hero-intro h5{
+        font-size: 2.5vw;
+    }
+}
